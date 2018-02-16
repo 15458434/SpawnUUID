@@ -14,6 +14,14 @@
 
 @implementation AppDelegate
 
+- (IBAction)newPressed:(id)sender {
+    [self reopenMainWindow];
+}
+
+- (IBAction)bringAllToFrontPressed:(id)sender {
+    [self reopenMainWindow];
+}
+
 - (void)reopenMainWindow {
     NSApplication *app = [NSApplication sharedApplication];
     if (app.windows.count == 0) {
