@@ -126,7 +126,7 @@
                                 </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-Xx-ek7">
-                                <rect key="frame" x="160" y="78" width="160" height="32"/>
+                                <rect key="frame" x="122" y="79" width="160" height="32"/>
                                 <buttonCell key="cell" type="push" title="Generate new UUID" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="x9p-dZ-tSD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -135,18 +135,31 @@
                                     <action selector="generateNewUUIDPressed:" target="XfG-lQ-9wD" id="WoM-bg-Vqy"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="meb-Jx-DRr">
+                                <rect key="frame" x="287" y="79" width="72" height="32"/>
+                                <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YvM-KF-l54">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pushToPasteBoardPressed:" target="XfG-lQ-9wD" id="cIp-Ux-cOQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="eer-n4-v9b" firstAttribute="centerX" secondItem="lgl-Xx-ek7" secondAttribute="centerX" id="4hY-mx-h6q"/>
+                            <constraint firstItem="eer-n4-v9b" firstAttribute="centerX" secondItem="lgl-Xx-ek7" secondAttribute="centerX" constant="38" id="4hY-mx-h6q"/>
                             <constraint firstItem="eer-n4-v9b" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="77" id="IMb-Nu-o09"/>
                             <constraint firstAttribute="trailing" secondItem="eer-n4-v9b" secondAttribute="trailing" constant="20" symbolic="YES" id="Iqw-QB-isW"/>
-                            <constraint firstAttribute="bottom" secondItem="lgl-Xx-ek7" secondAttribute="bottom" priority="999" constant="85" id="QXX-hY-gbH"/>
+                            <constraint firstAttribute="bottom" secondItem="lgl-Xx-ek7" secondAttribute="bottom" priority="999" constant="86" id="QXX-hY-gbH"/>
+                            <constraint firstItem="meb-Jx-DRr" firstAttribute="baseline" secondItem="lgl-Xx-ek7" secondAttribute="baseline" id="WCd-Of-Zx9"/>
                             <constraint firstItem="eer-n4-v9b" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="WSn-Zm-6IA"/>
-                            <constraint firstItem="lgl-Xx-ek7" firstAttribute="top" secondItem="eer-n4-v9b" secondAttribute="bottom" constant="70" id="bhB-wR-MpP"/>
+                            <constraint firstItem="lgl-Xx-ek7" firstAttribute="top" secondItem="eer-n4-v9b" secondAttribute="bottom" constant="69" id="bhB-wR-MpP"/>
+                            <constraint firstItem="meb-Jx-DRr" firstAttribute="leading" secondItem="lgl-Xx-ek7" secondAttribute="trailing" constant="17" id="eKK-RC-Up2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="generateNewUUIDButton" destination="lgl-Xx-ek7" id="Org-RQ-4mq"/>
+                        <outlet property="pushToPasteBoardButton" destination="meb-Jx-DRr" id="BJ4-PX-hgP"/>
                         <outlet property="uuidController" destination="jev-oo-JMY" id="XwX-UX-s50"/>
                     </connections>
                 </viewController>

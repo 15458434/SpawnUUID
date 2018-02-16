@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property (unsafe_unretained) IBOutlet NSButton *generateNewUUIDButton;
+@property (unsafe_unretained) IBOutlet NSButton *pushToPasteBoardButton;
 
 @end
 
@@ -20,6 +21,13 @@
 - (IBAction)generateNewUUIDPressed:(NSButton *)sender {
     NSParameterAssert(sender == self.generateNewUUIDButton);
     [self.uuidController generateNewUuid];
+}
+
+- (IBAction)pushToPasteBoardPressed:(NSButton *)sender {
+    NSParameterAssert(sender == _pushToPasteBoardButton);
+    NSPasteboard *postItBoard = [NSPasteboard generalPasteboard];
+    [postItBoard clearContents];
+    [postItBoard setString:self.uuidController.uuidString forType:NSStringPboardType];
 }
 
 @end
