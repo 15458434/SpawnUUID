@@ -6,7 +6,7 @@
 //  Copyright © 2018 Mark Cornelisse. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

@@ -12,6 +12,7 @@
 		38ADBE222036DC4A002268CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ADBE212036DC4A002268CD /* Assets.xcassets */; };
 		38ADBE252036DC4A002268CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ADBE232036DC4A002268CD /* Main.storyboard */; };
 		38ADBE282036DC4A002268CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ADBE272036DC4A002268CD /* main.m */; };
+		38ADBE312036DD2B002268CD /* UuidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ADBE302036DD2B002268CD /* UuidModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		38ADBE262036DC4A002268CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38ADBE272036DC4A002268CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38ADBE292036DC4A002268CD /* SpawnUUID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpawnUUID.entitlements; sourceTree = "<group>"; };
+		38ADBE2F2036DD2B002268CD /* UuidModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UuidModel.h; sourceTree = "<group>"; };
+		38ADBE302036DD2B002268CD /* UuidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UuidModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 			children = (
 				38ADBE1B2036DC4A002268CD /* AppDelegate.h */,
 				38ADBE1C2036DC4A002268CD /* AppDelegate.m */,
+				38ADBE2F2036DD2B002268CD /* UuidModel.h */,
+				38ADBE302036DD2B002268CD /* UuidModel.m */,
 				38ADBE1E2036DC4A002268CD /* ViewController.h */,
 				38ADBE1F2036DC4A002268CD /* ViewController.m */,
 				38ADBE212036DC4A002268CD /* Assets.xcassets */,
@@ -142,6 +147,7 @@
 			files = (
 				38ADBE202036DC4A002268CD /* ViewController.m in Sources */,
 				38ADBE282036DC4A002268CD /* main.m in Sources */,
+				38ADBE312036DD2B002268CD /* UuidModel.m in Sources */,
 				38ADBE1D2036DC4A002268CD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +279,8 @@
 				DEVELOPMENT_TEAM = Z6JP26PUUY;
 				INFOPLIST_FILE = SpawnUUID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "-Wpartial-availability";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.SpawnUUID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -288,6 +296,8 @@
 				DEVELOPMENT_TEAM = Z6JP26PUUY;
 				INFOPLIST_FILE = SpawnUUID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "-Wpartial-availability";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.SpawnUUID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

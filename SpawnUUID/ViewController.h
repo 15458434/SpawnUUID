@@ -6,10 +6,13 @@
 //  Copyright © 2018 Mark Cornelisse. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
+
+@class UuidModel;
 
 @interface ViewController : NSViewController
 
+@property (strong) IBOutlet UuidModel *uuidController;
 
 @end
 

@@ -7,21 +7,19 @@
 //
 
 #import "ViewController.h"
+#import "UuidModel.h"
+
+@interface ViewController ()
+
+@property (unsafe_unretained) IBOutlet NSButton *generateNewUUIDButton;
+
+@end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
+- (IBAction)generateNewUUIDPressed:(NSButton *)sender {
+    NSParameterAssert(sender == self.generateNewUUIDButton);
+    [self.uuidController generateNewUuid];
 }
-
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
-}
-
 
 @end
